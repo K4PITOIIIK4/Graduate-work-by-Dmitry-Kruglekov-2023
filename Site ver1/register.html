@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style_reg_log.css">
+    <title>Регистрация аккаунта</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+    <div class="registration-cssave">
+        <form>
+            <h2 class="text-center">Регистрация</h2>
+            <div class="form-group">
+                <input class="form-control item reg_adv" type="text" name="name" maxlength="15" 
+                    pattern="^[a-zA-Z0-9_.-]*$" id="name" placeholder="Имя" required>
+            
+                <input class="form-control item reg_adv" type="text" name="twoname" maxlength="15"
+                    pattern="^[a-zA-Z0-9_.-]*$" id="twoname" placeholder="Фамилия" required>
+
+                <input class="form-control item reg_adv" type="text" name="course" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$"
+                    id="course" placeholder="Направление подготовки" required>
+            </div>
+
+            <div class="form-group">
+                <input class="form-control item  reg_adv" type="text" name="telegram" maxlength="20" pattern="^[a-zA-Z0-9_.-]*$"
+                    id="telegram" placeholder="Адрес Telegram" required>
+                    
+                <input class="form-control item  reg_adv" type="password" name="Пароль" minlength="8" id="password"
+                    placeholder="Пароль" required>
+            </div>
+
+            <div class="form-group">
+                <h3 class="text-center">Навыки и технологии</h3>
+                <textarea class="form-control item tags" name="tags" pattern="^[a-zA-Z0-9_.-]*$" id="tags" placeholder="Введите навыки и технологии, которыми вы обладаете" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary btn-block create-account" type="submit" >Регистрация</button>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

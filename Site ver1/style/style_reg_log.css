@@ -1,0 +1,107 @@
+html {
+    background-color: #036280;
+    background-blend-mode: overlay;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 93%;
+    display: flex;
+}
+
+body {
+    background-color: transparent;
+}
+
+.registration-cssave{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registration-cssave form {
+    width: 80%;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #81BECE;
+}
+
+
+.registration-cssave .item {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+}
+
+.registration-cssave .create-account {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #378BA4;
+    border: none;
+    color: #E8EDE7;
+    margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+    .registration-cssave form {
+        padding: 20px 50px;
+    }
+
+    .footer {
+        width: 1000%;
+    }
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover{
+    background-color: #036280;
+}
+
+.text-center {
+    text-align: center;
+    text-decoration: none;
+    color: #012E4A;
+    padding: 0 0 10px 10px;
+}
+
+.tags{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 10em;
+}
+
+.reg_adv{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+}
+textarea {
+    resize: none;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: #012E4A;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 10em;
+    width: 577px;
+    text-align: center;
+}
