@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <script src="server.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #5CDB95;
+        }
+
+        main {
+            background-color: #05386B;
+            color: #EDF5E1;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding: 30px;
+            width: 80%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        main h2 {
+            text-align: center;
+        }
+
+        main p {
+            color: #EDF5E1;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #05386B;
+            padding: 20px 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .wrap-logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header a {
+            color: #EDF5E1;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            border: 2px solid #05386B;
+        }
+
+        header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #5CDB95;
+            border: 2px solid #5CDB95;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 576px) {
+            main {
+                padding: 20px 50px;
+            }
+        }
+
+        main a {
+            color: #EDF5E1;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            border: 2px solid #05386B;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #05386B;
+            color: #EDF5E1;
+            margin-top: 30px;
+            height: 10em;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer a {
+            color: #EDF5E1;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 30px;
+            border: 2px solid #05386B;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        footer a.logo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #5CDB95;
+            border: 2px solid #92c7aa;
+        }
+
+        .footer {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+
+        .reg_log{
+            border: 2px solid #EDF5E1;
+            margin-left: 10px;
+        }
+        .reg_log:hover{
+            border: 2px solid #5CDB95;
+            color: #5CDB95;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap-logo">
+            <a href="index.html" class="logo">CollDevSearch</a>
+        </div>
+        <nav>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="acount.html">Личный кабинет</a>
+                <a href="reg_adv.html">Подать объявление</a>
+                <a href="information.html">Информация</a>
+                <a class="reg_log" href="login.html">Войти</a>
+                <a class="reg_log" href="logout">Выйти</a>
+                <a class="reg_log" href="register.html">Регистрация</a>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <h2>Личный кабинет</h2>
+        <p>Имя: <%= name %></p>
+        <p>Курс: <%= course %></p>
+        <p>Адрес Telegram: <%= telegram %></p>
+        <p>Ваши навыки: <%= tags %></p>
+        <a class="reg_log" href="logout">Выйти</a>
+    </main>
+    <footer>
+        <div class="wrap-logo">
+            <a href="index.html" class="logo">CollDevSearch</a>
+        </div>
+        <table>
+            <td>
+            <th>
+                <a href="index.html">Главная</a>
+                <a href="acount.html">Личный кабинет</a>
+            </th>
+            <th>
+                <a href="reg_adv.html">Подать объявление</a>
+                <a href="information.html">Информация</a>
+            </th>
+            </td>
+        </table>
+    </footer>
+    <div class="footer">
+        <h5>Круглеков Дмитрий ПИ-б-0-192(1) 2023</h5>
+    </div>
+</body>
+
+</html>

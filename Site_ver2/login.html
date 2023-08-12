@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в аккаунт</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #5CDB95;
+        }
+    
+        main {
+            background-color: #05386B;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 40%;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #05386B;
+            padding: 20px 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        .wrap-logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        header a {
+            color: #EDF5E1;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            border: 2px solid #05386B;
+        }
+    
+        header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        header a:hover {
+            color: #5CDB95;
+            border: 2px solid #5CDB95;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+        }
+    
+        input,
+        textarea {
+            border-radius: 30px;
+            margin-bottom: 15px;
+            display: block;
+            padding: 20px 30px;
+            background-color: #E8EDE7;
+            color: #012E4A;
+        }
+    
+        input {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    
+        textarea {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 10em;
+            resize: none;
+        }
+    
+        @media (max-width: 576px) {
+            main {
+                padding: 20px 50px;
+            }
+        }
+    
+        .btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #05386B;
+            color: #E8EDE7;
+            margin-top: 20px;
+            border: 2px solid white;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        .btn:hover {
+            border: 2px solid #5CDB95;
+            color: #5CDB95;
+        }
+    
+        .text {
+            text-align: center;
+            text-decoration: none;
+            color: #EDF5E1;
+            padding: 0 0 10px 10px;
+        }
+    
+        h3 {
+            margin-bottom: 10px;
+        }
+    
+        footer {
+            background-color: #05386B;
+            color: #EDF5E1;
+            margin-top: 30px;
+            height: 10em;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+    
+        footer a {
+            color: #EDF5E1;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 30px;
+            border: 2px solid #05386B;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    
+        footer a.logo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    
+        footer a:hover {
+            color: #5CDB95;
+            border: 2px solid #92c7aa;
+        }
+    
+        .footer {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+    
+        .log_main {
+            margin-top: 10em;
+            margin-bottom: 13em;
+        }
+
+        .reg_log{
+            border: 2px solid #EDF5E1;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <div class="wrap-logo">
+                <a href="index.html" class="logo">CollDevSearch</a>
+            </div>
+            <nav>
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="acount.html">Личный кабинет</a>
+                    <a href="reg_adv.html">Подать объявление</a>
+                    <a href="information.html">Информация</a>
+                    <a class="reg_log" href="login.html">Войти</a>
+                    <a class="reg_log" href="logout">Выйти</a>
+                    <a class="reg_log" href="register.html">Регистрация</a>
+                </nav>
+            </nav>
+        </header>
+        <main class="log_main">
+            <h2 class="text">Введите данные</h2>
+            <form method="post" action="login">
+                <input type="text" name="username" maxlength="60" id="username" placeholder="Адрес Telegram" required>
+            
+                <input type="password" name="password" minlength="8" id="password"
+                placeholder="Пароль" required>
+
+                <button class="btn" type="submit">Войти</button>
+            </form>
+        </main>
+        <footer>
+            <div class="wrap-logo">
+                <a href="index.html" class="logo">CollDevSearch</a>
+            </div>
+            <table>
+                <td>
+                <th>
+                    <a href="index.html">Главная</a>
+                    <a href="acount.html">Личный кабинет</a>
+                </th>
+                <th>
+                    <a href="reg_adv.html">Подать объявление</a>
+                    <a href="information.html">Информация</a>
+                </th>
+                </td>
+            </table>
+        </footer>
+        <div class="footer">
+            <h5>Круглеков Дмитрий ПИ-б-0-192(1) 2023</h5>
+        </div>
+        </footer>
+    </body>
+</html>
